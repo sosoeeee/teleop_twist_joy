@@ -28,6 +28,7 @@ def generate_launch_description():
                 'device_id': joy_dev,
                 'deadzone': 0.3,
                 'autorepeat_rate': 20.0,
+                'dev_ff': '/dev/input/event6', # "cat /proc/bus/input/devices" checke the event id
             }, config_filepath]),
         # launch_ros.actions.Node(
         #     package='teleop_twist_joy', executable='teleop_node',
